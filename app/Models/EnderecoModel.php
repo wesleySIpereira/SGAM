@@ -24,7 +24,7 @@ class EnderecoModel extends Model
     protected $returnType     = 'array';
    // protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['cep','logradouro','cidade','uf','bairro','n_endereco','cid_pessoa'];
+    protected $allowedFields = ['cep','logradouro','cidade','uf','bairro','n_endereco','fk_endereco'];
 
     protected $useTimestamps = false;
    // protected $createdField  = 'created_at';

@@ -24,7 +24,7 @@ class PessoaModel extends Model
     protected $returnType     = 'array';
    // protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['nm_pessoa', 'nm_pai','n_cpf','n_rg','dt_nascimento','cid_endereco','cid_contato','cid_endereco'];
+    protected $allowedFields = ['nm_pessoa','nm_mae','nm_pai','n_cpf','n_rg','dt_nascimento','fk_contato','fk_endpessoa'];
 
     protected $useTimestamps = false;
    // protected $createdField  = 'created_at';
@@ -35,7 +35,12 @@ class PessoaModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-
+    public function veficaPessoa($data)
+    {
+      $pessoa=$this->where(array('nm_pessoa'=>$data['nm_pessoa'],'n_cpf'=>$data['n_cpf'],'n_rg'=>$data['n_rg']))->findAll();
+      
+      return $pessoa;
+    }
    
 
 }

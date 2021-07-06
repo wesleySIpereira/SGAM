@@ -4,7 +4,7 @@
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
-		<title>Blank Page | Okler Themes | Porto-Admin</title>
+		<title>SGAM |<?= $titulo;?> |<?= $subtitulo; ?></title>
 		<meta name="keywords" content="HTML5 Admin Template">
 		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
@@ -32,9 +32,15 @@
 
 		<!-- Head Libs -->
 		<script src="<?php echo base_url(); ?>/assets/vendor/modernizr/modernizr.js"></script>
-
+		<script src="<?php echo base_url()?>/assets/javascripts/forms/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="<?php echo base_url()?>/assets/javascripts/jquery.validate.js"></script>
+		<script src="<?php echo base_url()?>/assets/javascripts/forms/jquery.mask.js"></script>
+		<script src="<?php echo base_url()?>/assets/javascripts/forms/mascaras.js"></script>
+		<script src="<?php echo base_url()?>/assets/javascripts/forms/validation.js"></script>
+		<!-- Adicionando Javascript -->
+  
 	</head>
-	<body>
+	<body onload="msg()">
 		<section class="body">
 
 			<!-- start: header -->
@@ -108,7 +114,7 @@
 							<nav id="menu" class="nav-main" role="navigation">
 								<ul class="nav nav-main">
 									<li>
-										<a href="index.html">
+										<a href="<?= base_url();?>/index.php/pessoa/">
 											<i class="fa fa-home" aria-hidden="true"></i>
 											<span>Dashboard</span>
 										</a>
@@ -117,18 +123,18 @@
 									<li class="nav-parent nav-active">
 										<a>
 											<i class="fa fa-copy" aria-hidden="true"></i>
-											<span>Pages</span>
+											<span>Fichas</span>
 										</a>
 										<ul class="nav nav-children" style="">
 											<li>
-												<a href="pages-signup.html">
-													 Sign Up
+												<a href="<?= base_url();?>/index.php/pessoa">
+													 Cadastrar 
 												</a>
 											</li>
 										
 											<li>
-												<a href="pages-search-results.html">
-													 Search Results
+												<a href="<?= base_url();?>/index.php/pessoa/show">
+													 Gerir Fichas
 												</a>
 											</li>
 										</ul>
@@ -138,37 +144,19 @@
 									
 									
 									
-									<li class="nav-parent">
+									<li class="nav-parent nav-active">
 										<a>
-											<i class="fa fa-align-left" aria-hidden="true"></i>
-											<span>Menu Levels</span>
+											<i class="fa fa-copy" aria-hidden="true"></i>
+											<span>Info</span>
 										</a>
-										<ul class="nav nav-children">
+										<ul class="nav nav-children" style="">
 											<li>
-												<a>First Level</a>
+												<a href="<?= base_url();?>/index.php/pessoa">
+													Sobre
+												</a>
 											</li>
-											<li class="nav-parent">
-												<a>Second Level</a>
-												<ul class="nav nav-children">
-													<li class="nav-parent">
-														<a>Third Level</a>
-														<ul class="nav nav-children">
-															<li>
-																<a>Third Level Link #1</a>
-															</li>
-															<li>
-																<a>Third Level Link #2</a>
-															</li>
-														</ul>
-													</li>
-													<li>
-														<a>Second Level Link #1</a>
-													</li>
-													<li>
-														<a>Second Level Link #2</a>
-													</li>
-												</ul>
-											</li>
+										
+											
 										</ul>
 									</li>
 									

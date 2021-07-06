@@ -24,7 +24,7 @@ class ContatoModel extends Model
     protected $returnType     = 'array';
    // protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['cid_pessoa','n_telefone','nm_email'];
+    protected $allowedFields = ['fk_contato','n_telefone','nm_email'];
 
     protected $useTimestamps = false;
    // protected $createdField  = 'created_at';
@@ -34,6 +34,14 @@ class ContatoModel extends Model
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
+
+
+    public function veficaContato($data)
+    {
+      $contato=$this->where(array('n_telefone'=>$data['n_telefone'],'nm_email'=>$data['nm_email']))->findAll();
+      
+      return $contato;
+    }
 
 
 }

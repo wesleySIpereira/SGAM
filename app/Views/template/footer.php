@@ -5,7 +5,7 @@
 		</section>
 
 		<!-- Vendor -->
-		<script src="<?php echo base_url(); ?>/assets/vendor/jquery/jquery.js"></script>
+		
 		<script src="<?php echo base_url(); ?>/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
 		<script src="<?php echo base_url(); ?>/assets/vendor/bootstrap/js/bootstrap.js"></script>
 		<script src="<?php echo base_url(); ?>/assets/vendor/nanoscroller/nanoscroller.js"></script>
@@ -22,5 +22,5 @@
 		<!-- Theme Initialization Files -->
 		<script src="<?php echo base_url(); ?>/assets/javascripts/theme.init.js"></script>
 
-	
+		<script src="<?php echo base_url(); ?>/assets/javascripts/ui-elements/examples.modals.js"></script>
 </body></html>
