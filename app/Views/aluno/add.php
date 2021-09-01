@@ -244,23 +244,23 @@
 
                     <div class="form-group col-sm-2 col-lg-2 col-md-2 ">
                         <label class="control-label" for="ClienteNome">Nascimento</label>
-                        <input name="pessoa[dt_nascimento]" required="required" class="nome-fantasia date form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="pessoa[dt_nascimento]"  class="nome-fantasia date form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
                     <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
                         <label class="control-label" for="ClienteNome">CPF</label>
-                        <input name="pessoa[n_cpf]"  required="required" class="nome-fantasia cpf  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="pessoa[n_cpf]"   class="nome-fantasia cpf  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
                     <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
                         <label class="control-label" for="ClienteNome">RG</label>
-                        <input name="pessoa[n_rg]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="pessoa[n_rg]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
                     <div class="form-group col-sm-6 col-lg-6 col-md-6 ">
                         <label class="control-label" for="ClienteNome">Nome da Mãe</label>
-                        <input name="pessoa[nm_mae]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="pessoa[nm_mae]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
                     <div class="form-group col-sm-6 col-lg-6 col-md-6 ">
                         <label class="control-label" for="ClienteNome">Nome do Pai</label>
-                        <input name="pessoa[nm_pai]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="pessoa[nm_pai]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
 
                     <h4 class="col-sm-12 col-lg-12 col-md-12 margin-top-0 text-primary"><i class="glyphicon glyphicon-map-marker margin-right-5px"></i> Endereços</h4>                     
@@ -269,27 +269,27 @@
 			
                     <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
                         <label class="control-label" for="ClienteNome">CEP</label>
-                        <input name="endereco[cep]" required="required" class="nome-fantasia cep  form-control" value="" maxlength="100" autocomplete="off" type="text" id="cep">
+                        <input name="endereco[cep]"  class="nome-fantasia cep  form-control" value="" maxlength="100" autocomplete="off" type="text" id="cep">
                     </div>
                     <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
                         <label class="control-label" for="ClienteNome">UF</label>
-                        <input name="endereco[uf]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="estado">
+                        <input name="endereco[uf]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="estado">
                     </div>
                     <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
                         <label class="control-label" for="ClienteNome">Cidade</label>
-                        <input name="endereco[cidade]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="cidade">
+                        <input name="endereco[cidade]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="cidade">
                     </div>
                     <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
                         <label class="control-label" for="ClienteNome">Logradouro</label>
-                        <input name="endereco[logradouro]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="rua">
+                        <input name="endereco[logradouro]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="rua">
                     </div>
                     <div class="form-group col-sm-4 col-lg-4 col-md-4 ">
                         <label class="control-label" for="ClienteNome">Bairro</label>
-                        <input name="endereco[bairro]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="bairro">
+                        <input name="endereco[bairro]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="bairro">
                     </div>
                     <div class="form-group col-sm-2 col-lg-2 col-md-2 ">
                         <label class="control-label" for="ClienteNome">Nº</label>
-                        <input name="endereco[n_endereco]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="endereco[n_endereco]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
                     <div class="col-sm-12 col-lg-12 col-md-12">
                   <!--  <button id="AdicionarEndereco" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign margin-right-5px"></i> Inserir novo endereço</button> -->
@@ -297,11 +297,11 @@
                     <h4 class="margin-top-20px col-sm-12 col-lg-12 col-md-12 text-primary"><i class="fa fa-bullhorn margin-right-5px"></i>Contatos</h4>
                     <div class="form-group col-sm-4 col-lg-4 col-md-4 ">
                         <label class="control-label" for="ClienteNome">Telefone</label>
-                        <input name="contato[n_telefone]" required="required" class="nome-fantasia phone_with_ddd form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="contato[n_telefone]"  class="nome-fantasia phone_with_ddd form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
                     <div class="form-group col-sm-6 col-lg-6 col-md-6 ">
                         <label class="control-label" for="ClienteNome">E-mail</label>
-                        <input name="contato[nm_email]" required="required" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
+                        <input name="contato[nm_email]"  class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                     </div>
                     <div class="col-sm-12 col-lg-12 col-md-12">
                   <!--  <button id="AdicionarContato" type="button" class="btn btn-primary margin-top-10px margin-bottom-10px"><i class="glyphicon glyphicon-plus-sign margin-right-5px"></i>Inserir novo contato</button> -->

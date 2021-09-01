@@ -1,16 +1,3 @@
-<!-- verifica se tem alguma busca se não, não deixa buscar -->
-<script>
-function vericabusca(){ 
-  var pessoa,mae,pai,cpf;
-  pessoa=$('#pessoa').val();
-  mae=$('#mae').val();
-  pai=$('#pai').val();
-  cpf=$('#cpf').val();
-  
-
- </script>
-
-
 <!-- essa parte não mexer  -->
 <section role="main" class="content-body">
     <header class="page-header">
@@ -42,26 +29,19 @@ function vericabusca(){
             <div class="box-busca-avancada box-solid">
                 <div class="row">
                     <div class="margin-top-10px col-sm-12 col-lg-12 col-md-12">
-                        <form action="<?= base_url('index.php/pessoa/show'); ?>" id="form_ficha"  method="post" accept-charset="utf-8">
+                        <form action="<?= base_url('index.php/pessoa/etiqueta'); ?>" id="form_ficha"  method="post" accept-charset="utf-8">
                             <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
-                                <label class="control-label" for="ClienteNome">ALUNO</label>
-                                <input name="pessoa[nm_pessoa]" class="nome-fantasia  form-control"  maxlength="100" autocomplete="off" type="text" id="pessoa">
+                                <label class="control-label" for="ClienteNome">De</label>
+                                <input name="inicio" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                             </div>
                             <div class="form-group col-sm-2 col-lg-2 col-md-2 ">
-                                <label class="control-label" for="ClienteNome">CPF</label>
-                                <input name="pessoa[n_cpf]" class="nome-fantasia cpf form-control" value="" maxlength="100" autocomplete="off" type="text" id="cpf">
+                                <label class="control-label" for="ClienteNome">Até</label>
+                                <input name="fin" class="nome-fantasia cpf form-control" value="" maxlength="100" autocomplete="off" type="text" id="ClienteNome">
                             </div>
-                            <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
-                                <label class="control-label" for="ClienteNome">PAI</label>
-                                <input name="pessoa[nm_pai]" class="nome-fantasia  form-control" value="" maxlength="100" autocomplete="off" type="text" id="pai">
-                            </div>
-                            <div class="form-group col-sm-3 col-lg-3 col-md-3 ">
-                                <label class="control-label" for="ClienteNome">MÃE</label>
-                                <input name="pessoa[nm_mae]" class="nome-fantasia  form-control"  maxlength="100" autocomplete="off" type="text" id="mae">
-                            </div>
+                           
                             
                             <div class="both col-sm-12 col-lg-12 col-md-12">
-                                <button class="btn btn-success btn-responsive" type="submit"><span class="glyphicon glyphicon-ok-sign margin-right-10px"></span>Buscar</button>
+                                <button class="btn btn-success btn-responsive" type="submit"><span class="glyphicon glyphicon-ok-sign margin-right-10px"></span>GERAR</button>
                                
                             </div>
                            
@@ -98,7 +78,7 @@ function vericabusca(){
                                                     <td><?= $alunos['n_cpf'];?></td> 
                                                     <td><?= $alunos['nm_mae'];?></td> 
                                                     <td><?= $alunos['nm_pai'];?></td> 
-                                                    <td class="text-center"><a  class="mb-xs mt-xs mr-xs btn btn-xs btn-dark modal-basic" id='modal' href="#ver_<?= $alunos['id_ficha'];?>" data-toggle="tooltip" data-original-title="VISUALIZAR"><i class="fa fa-eye"></i></a></td> 
+                                                    <td class="text-center"><a class="btn btn-xs btn-dark" href="#" data-toggle="tooltip" data-original-title="VISUALIZAR"><i class="fa fa-eye"></i></a></td> 
                                                     <td class="text-center"><a class="btn btn-xs btn-warning" href="#" data-toggle="tooltip" data-original-title="EDITAR"><i class="fa fa-edit"></i></a></td> 
                                                     <td class="text-center"><a class="btn btn-xs btn-danger disabled" href="#" data-toggle="tooltip" data-original-title="DELETAR"><i class="fa fa-trash-o"></i></a></td> 
                                                 </tr>

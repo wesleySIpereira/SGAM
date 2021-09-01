@@ -35,6 +35,9 @@ class Pessoa extends BaseController
     private $EnderecoModel;// cria variavel do model endereço
 	private $ContatoModel;//cria variavel do model contato
     private $FichaModel; //cria variavel do model ficha
+	
+	
+	
 	public function index()
 	{  $session = \Config\Services::session();
 	 $modal=$session->getFlashdata();	
@@ -55,6 +58,34 @@ class Pessoa extends BaseController
 		echo view('modais/modal',$modal);
 	  }
 	   echo view('aluno/add',$data);
+	   echo view('template/footer',$data);
+	  
+      
+
+
+	}
+	public function etiqueta()
+	{  $session = \Config\Services::session();
+	
+		$modal=$session->getFlashdata();	
+        $data=array('titulo'=>'Gerar etiquetas',
+	               'subtitulo'=>'Nova ficha',
+				    't_titulo'=>'Aluno',
+					 'l_titulo'=>base_url().'/index.php/pessoa'
+				   
+	 
+	);
+	 
+	
+
+	
+	  echo view('template/header',$data);
+	  
+	  if(count($modal)!==0){ 
+		echo view('modais/modal',$modal);
+	  }
+	    
+	  echo view('aluno/geratag',$data);
 	   echo view('template/footer',$data);
 	  
       
@@ -247,7 +278,24 @@ class Pessoa extends BaseController
 	  echo view('template/header',$data);
 	  if(isset($aluno)and (!empty($aluno))){ 
         #busca pela ficha do aluno caso tenha valor faça a busca.
+		 /* ["id_ficha"]=> string(2) "16" 
+		   ["nm_pessoa"]=> string(6) "wesley" 
+		   ["nm_mae"]=> string(5) "nelia" 
+		   ["nm_pai"]=> string(7) "vicente" 
+		   ["n_cpf"]=> string(14) "091.171.666-16" 
+		   ["n_rg"]=> string(6) "mg 654"
+		    ["dt_nascimento"]=> string(10) "1986-06-18" 
+			["cep"]=> string(9) "38740-402"
+			 ["logradouro"]=> string(15) "Rua Afonso Pena"
+			  ["cidade"]=> string(11) "Patrocínio" 
+			  ["uf"]=> string(2) "MG"
+			   ["bairro"]=> string(14) "Santo Antônio"
+			    ["n_endereco"]=> string(4) "3215" 
+				 ["n_telefone"]=> string(15) "(34) 98873-9676" 
+				 ["nm_email"]=> string(23) "wesley_cras@hotmail.com"  */
+		
 		echo view('aluno/find',$aluno);
+		echo view('modais/ver_aluno');
 	  }else{
 	  echo view('aluno/find');
 	  }
