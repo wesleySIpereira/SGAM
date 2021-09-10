@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL ='http://localhost/SGAM/public/';
+	public $baseURL ='http://localhost/SGAM/public/'; //'http://170.79.225.31/SGAM/public/';     //'http://localhost/SGAM/public/';
 
 	/**
 	 * --------------------------------------------------------------------------

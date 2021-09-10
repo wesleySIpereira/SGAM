@@ -145,7 +145,39 @@
 											</li>
 										</ul>
 									</li>
-									
+									<li class="nav-parent nav-active">
+										<a>
+											<i class="fa fa-copy" aria-hidden="true"></i>
+											<span>Documentos</span>
+										</a>
+										<ul class="nav nav-children" style="">
+											<li>
+												<a href="<?= base_url();?>/index.php/documento/">
+													Gerir Locais
+												</a>
+
+											</li>
+											<li>
+												<a href="<?= base_url();?>/index.php/documento/prateleira">
+													Cadastrar Prateleira
+												</a>
+												
+											</li>
+											<li>
+												<a href="<?= base_url();?>/index.php/documento/pasta">
+													Cadastrar Pasta
+												</a>
+												
+											</li>
+											<li>
+												<a href="<?= base_url();?>/index.php/documento/doc">
+													Cadastrar Documento
+												</a>
+												
+											</li>
+											
+										</ul>
+									</li>
 									
 									
 									
