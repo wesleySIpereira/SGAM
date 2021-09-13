@@ -1,6 +1,6 @@
 
 ## SGAM
-## _Sistema de Gerenciamento de Arquivo morto pra escolas_
+## _Sistema de Gerenciamento de Arquivo morto para escolas_
 
 
  Sistema criado para ajudar na organização dos arquivos inativos de escolas como:
